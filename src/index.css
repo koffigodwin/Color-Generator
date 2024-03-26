@@ -1,0 +1,119 @@
+
+:root{
+  --backgroundColor: #000;
+  --textColor:#da1212;
+  --shadow-1:#fff;
+  --shadow-2:#9deb0d;
+  --primary-color-100 :  #5e3636 ; 
+  --primary-color-200 : #5e3636 ;
+  --primary-color-300 : #ac8f8f ;
+  --primary-color-400 : #5499ad ;
+  --primary-color-500 : #363838 ;
+  --primary-color-600 : #84def7 ;
+  --primary-color-700 : #5499ad;
+  --primary-color-800 : #718085 ;
+  --primary-color-900 : #285663 ;
+  --white : #fff ;
+
+}
+html{
+  width: 100%;
+  color: #000;
+}
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1,h2,h3{
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  color: var(--primary-color-400);
+  text-align: center;
+  
+}
+.form-component {
+  padding-bottom: 1rem;
+  display: grid;
+  row-gap: 1.5rem;
+  height: 160px;
+}
+
+.form-color {
+  display: flex;
+}
+h4{
+  font-size: 20px;
+  color: #000;
+  margin-right: 10px;
+}
+input[type="text"]{
+  margin-right: 2px;
+}
+input[type="text"]{
+  max-width: 200px;
+  height: 40px;
+  border-color: transparent;
+  border: none;
+  cursor: pointer ;
+  font-size: 20px;
+  text-align: start;
+  word-spacing: 10px;
+  color: #000;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+}
+input[type="color"]{
+  height: 100%;
+  background-color: var(--white);
+  border-color: var(--white);
+}
+.btn{
+  /* height: 40px; */
+  padding: 10px;
+  border-color: transparent;
+  border: none;
+  cursor: pointer ;
+  font-size: 20px;
+  text-align: center;
+  color: var(--shadow-1);
+  background-color: var(--shadow-2); 
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.colorlist{
+    min-height: calc(100vh - 160px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(96px, 1fr));
+  
+}
+.singlecolor{
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.singlecolor p {
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+.statement  .color-value{
+  color: #fff;
+}
+.statement  .percent-value{
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .form-component {
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    align-items: center;
+  }
+  .form-color {
+    height: 40px;
+  }
+}
